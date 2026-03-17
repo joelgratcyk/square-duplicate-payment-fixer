@@ -1,10 +1,8 @@
-# square-duplicate-payment-fixer
-ONE-TIME cleanup tool for duplicate Square payment methods in Event Espresso. Activates on individual sites only. DELETE AFTER USE.
 # Square Duplicate Payment Method Fixer
 
 **A one-time cleanup tool for duplicate Square payment methods in Event Espresso (Multisite compatible)**
 
-## ⚠️ IMPORTANT DISCLAIMER
+## IMPORTANT DISCLAIMER
 
 **THIS PLUGIN IS FOR ONE-TIME USE ONLY.**  
 It is designed to be activated, run once, and then **DELETED**. Do not keep it active on your site. Use at your own risk. 
@@ -21,12 +19,12 @@ It safely:
 
 ## Features
 
-- ✅ **Multisite compatible** - Install network-wide, activate on individual sites only
-- ✅ **Safe one-time execution** - Won't run twice on the same site
-- ✅ **No data loss** - Preserves one working payment method
-- ✅ **Detailed reporting** - Shows exactly what was found and fixed
-- ✅ **Security built-in** - Nonce verification and admin-only access
-- ✅ **Reminder system** - Nags you to delete it when done
+- **Multisite compatible** - Install network-wide, activate on individual sites only
+- **Safe one-time execution** - Won't run twice on the same site
+- **No data loss** - Preserves one working payment method
+- **Detailed reporting** - Shows exactly what was found and fixed
+- **Security built-in** - Nonce verification and admin-only access
+- **Reminder system** - Nags you to delete it when done
 
 ## Requirements
 
@@ -87,7 +85,8 @@ DELETE FROM wp_esp_payment_method WHERE PMD_ID = [duplicate_id]
 DELETE FROM wp_esp_extra_meta WHERE EXM_type = 'PaymentMethod' AND EXM_ID = [duplicate_id]
 
 -- Removes leftover options
-DELETE FROM wp_options WHERE option_name = 'ee_payment_method_squareonsite_settings' ```
+DELETE FROM wp_options WHERE option_name = 'ee_payment_method_squareonsite_settings'
+```
 
 For multisite, the plugin automatically uses the correct table prefix (e.g., wp_2_ for site ID 2).
 
