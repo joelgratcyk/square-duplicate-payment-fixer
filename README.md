@@ -100,14 +100,15 @@ No sensitive data stored
 Self-deleting reminder system
 
 ## Frequently Asked Questions
-Q: Will this delete my Square account connection?
-A: No. It only removes duplicate database records. You may need to reconnect Square on the preserved method.
 
-Q: Can I run this on multiple sites?
-A: Yes! Install network-wide, then activate and run on each subsite individually.
+**Q: Will this delete my Square account connection?**  
+**A:** No. It only removes duplicate database records. You may need to reconnect Square on the preserved method.
 
-Q: What if I have more than one Square payment method intentionally?
-A: This plugin assumes duplicates are unintended. If you purposely have multiple Square methods, DO NOT use this plugin.
+**Q: Can I run this on multiple sites?**  
+**A:** Yes! Install network-wide, then activate and run on each subsite individually.
 
-Q: Will this affect my transaction history?
-A: No. Payment records are stored separately and are not affected.
+**Q: What if I have more than one Square payment method intentionally?**  
+**A:** This plugin assumes duplicates are unintended. If you purposely have multiple Square methods, DO NOT use this plugin.
+
+**Q: Will this affect my transaction history?**  
+**A:** No. Payment records are stored separately and are not affected.
