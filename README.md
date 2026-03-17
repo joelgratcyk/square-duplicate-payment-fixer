@@ -87,7 +87,7 @@ DELETE FROM wp_esp_payment_method WHERE PMD_ID = [duplicate_id]
 DELETE FROM wp_esp_extra_meta WHERE EXM_type = 'PaymentMethod' AND EXM_ID = [duplicate_id]
 
 -- Removes leftover options
-DELETE FROM wp_options WHERE option_name = 'ee_payment_method_squareonsite_settings'
+DELETE FROM wp_options WHERE option_name = 'ee_payment_method_squareonsite_settings' ```
 
 For multisite, the plugin automatically uses the correct table prefix (e.g., wp_2_ for site ID 2).
 
